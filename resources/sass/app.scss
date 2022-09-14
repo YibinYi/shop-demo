@@ -1,0 +1,383 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.products-index-page {
+    .product-item {
+        &:hover {
+            border: 1px solid red;
+        }
+
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .top {
+            a {
+                color: #000000;
+            }
+
+            .price {
+                color: red;
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+
+            & > div:first-child {
+                border-right: 1px solid #eee;
+            }
+
+            div {
+                padding: 5px;
+                flex: 1;
+            }
+
+            .sold_count > span {
+                color: #2fbcf8;
+            }
+
+            .review_count > span {
+                color: #a79df8;
+            }
+
+            border-top: 1px solid #eee;
+        }
+    }
+
+    .form-search {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+
+        &:first-child {
+            border-top: 1px solid #eee;
+        }
+    }
+
+    .filter-box {
+        .filter-key {
+        }
+
+        .filter-value {
+            a {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .filter {
+        border: 1px red solid;
+        font-size: 12px;
+        padding: 2px 0 2px 2px;
+
+        .filter-value {
+            color: red;
+        }
+
+        .removeProperty {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background: red;
+            padding: 2px;
+        }
+
+        margin-right: 5px;
+    }
+}
+
+.products-show-page {
+    .text-red{
+        color: red;
+    }
+    .skus {
+        label {
+            padding: 0 10px;
+        }
+    }
+
+    .product-image {
+        height: 350px;
+        width: 350px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .price > span {
+        color: red;
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .sold_and_review {
+        border-top: 1px dotted #eee;
+        border-bottom: 1px dotted #eee;
+        padding: 10px 0;
+        display: flex;
+
+        & > div:first-child {
+            border-right: 1px dotted #eee;
+        }
+
+        div {
+            flex-grow: 1;
+        }
+
+        span {
+            color: red;
+        }
+    }
+
+    .amount {
+        margin: 5px 0;
+
+        input {
+            margin-left: 10px;
+        }
+    }
+
+    .product-detail {
+        border-right: 1px dotted #eee;
+
+        .buttons {
+            & > div:first-child {
+                margin-right: 30px;
+            }
+            button{
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .product-description {
+        width: 790px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .product-properties {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+
+        .product-properties-title {
+            font-weight: 700;
+            color: #999;
+            padding: 5px 0;
+        }
+
+        .product-properties-list {
+            list-style: none;
+            padding: 5px 0;
+            text-indent: 0;
+
+            li {
+                display: inline-block;
+                width: 30%;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.carts-index-page {
+    .amount {
+        width: 80px;
+    }
+
+    .product-info {
+        img {
+            max-width: 80px;
+            max-height: 80px;
+            margin-right: 5px;
+        }
+
+        display: flex;
+
+        .product-detail {
+            display: block;
+        }
+    }
+
+    .not_sale {
+        a {
+            text-decoration: line-through;
+        }
+
+        span {
+            color: red;
+        }
+    }
+}
+
+.orders-index-page {
+    .product-info {
+        display: flex;
+
+        img {
+            max-height: 80px;
+            max-width: 80px;
+        }
+
+        #info {
+            display: block;
+        }
+
+        .product-title, .sku-title {
+            padding-left: 5px;
+            padding-bottom: 5px;
+        }
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+    td[rowspan] {
+        border-left: 1px solid #eee;
+    }
+}
+
+.orders-show-page {
+    .product-info {
+        img {
+            max-height: 80px;
+            max-width: 80px;
+            padding-right: 10px;
+        }
+
+        display: flex;
+
+        .info {
+            display: block;
+        }
+    }
+
+    .order-bottom {
+        display: flex;
+
+        .order-info {
+            width: 50%;
+
+            .line {
+                display: flex;
+            }
+        }
+
+        .order-right {
+            width: 50%;
+
+            .amount {
+
+            }
+
+            .value {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.orders-payment-page {
+    .order {
+        .order-header {
+            line-height: 50px;
+            padding: 0 30px;
+            border-left: #2bdff8 5px solid;
+        }
+
+        .order-body {
+            padding: 10px 35px;
+
+            .order-body-item {
+                margin: 2px 0;
+            }
+        }
+    }
+
+    #platform {
+
+        .platform-active {
+            border: 1px solid #da3232;
+
+            i {
+                height: 24px;
+                width: 27px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: url("/public/images/select_icon.png") no-repeat;
+            }
+        }
+
+        .alipay, .wechat {
+            position: relative;
+            line-height: 50px;
+            text-align: center;
+
+            img {
+                max-width: 130px;
+                max-height: 50px;
+                padding: 5px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.orders-review-index-page {
+}
+
+.category {
+    a {
+        line-height: 30px;
+        padding: 5px;
+    }
+
+    .dropdown-submenu {
+        position: relative;
+        & > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+            margin-left: 1px;
+        }
+
+        &:hover > .dropdown-menu {
+            display: block;
+        }
+
+    }
+}
+
+.coupon-index-page {
+}
