@@ -1,4 +1,4 @@
-FROM php:7.3.8-fpm
+FROM php:7.4.32-fpm
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 COPY sources.list .
